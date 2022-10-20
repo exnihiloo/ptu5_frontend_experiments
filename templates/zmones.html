@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="lt">
+    <head>
+        <meta charset="UTF-8">
+        <title>Žmonės</title>
+    </head>
+    <body>
+        <h1>Žmonių sąrašas</h1>
+        <h3>Gerų studentų sąrašas</h3>
+        <!-- hr yra horizontali linija -->
+        <hr>
+        <ol>
+        {% for zmogus in zmones %}
+            <li>{{ zmogus }}</li>
+        {% endfor %}
+        </ol>
+    </body>
+</html>
