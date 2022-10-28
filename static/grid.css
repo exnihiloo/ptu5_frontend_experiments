@@ -1,0 +1,47 @@
+body {
+    font-family: monospace;
+}
+.container {
+    display: grid;
+    grid-template-rows: auto;
+    width: 70vw;
+    margin: 0 auto;
+    /* gap: 0.2rem 0.5rem; */
+    /* margin-top: 0.5rem; */
+}
+
+.cont-3 {
+    grid-template-columns: 0.8fr 1.4fr 0.8fr;
+    /* funkcija repeat, kartojam tris kartus */
+    /* grid-template-columns: repeat(3, calc(100% / 3 - 0.5rem * 2 / 3)); */
+    /* grid-template-columns: calc(30% - 0.5rem * 2 / 3 ) calc(40% - 0.5rem * 2 / 3) calc(30% - 0.5rem * 2 / 3); */
+}
+.cont-4 {
+    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-columns: calc(30% - 0.5rem * 3 / 4) auto calc(20% - 0.5rem * 3 / 4) calc(20% - 0.5rem * 3 / 4); */
+    /* grid-template-columns: calc(25% - 0.5rem * 3 / 4) calc(25% - 0.5rem * 3 / 4) calc(25% - 0.5rem * 3 / 4) calc(25% - 0.5rem * 3 / 4); */
+}
+.item {
+    /* background-color: rgb(97, 200, 235); */
+    padding: 0.2rem;
+    margin: 0.1rem;
+}
+.col-double {
+    grid-column: span 2;
+    }
+.row-double {
+    grid-row: span 2;
+    }
+.meniu {
+    grid-column: span 3;
+    }
+.footer {
+    grid-column: span 4;
+    }
+img.logo {
+    max-height: 30px;
+    }
+.meniu, .logo {
+    background-color: #000;
+    color: #ccc;
+    }

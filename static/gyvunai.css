@@ -1,0 +1,128 @@
+body {
+    display: grid;
+    grid-template-rows: 3rem auto 4rem;
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header {
+    background-color: rgb(100, 149, 96);
+    color: rgb(10, 1, 1);
+    display: grid;
+    place-items: stretch center;
+
+}
+footer {
+    background-color: rgb(100, 149, 96);
+    display: grid;
+    place-items: stretch center;
+}
+
+main {
+    background: url('/static/noah2.jpeg');
+    background-size: cover;
+    background-position: center center;
+    display: grid;
+    place-items: stretch center;
+    background-attachment: fixed;
+}
+main .container {
+    background-color: rgba(255, 255, 255, 0.5);
+    display: grid;
+    grid-template-columns: auto 20%;
+    place-items: stretch stretch;
+    background-attachment: fixed;
+}
+
+.container {
+    width: 1200px;
+    max-width: 90vw;
+}
+header .container {
+    display: grid;
+    place-items: center start;
+    grid-template-columns: 10rem repeat(5, auto);
+
+}
+footer .container {
+    display: grid;
+    place-items: stretch center;
+    grid-template-columns: 10rem repeat(5, auto);
+}
+header a{
+    color:rgb(6, 37, 12);
+    padding: 0.7rem;
+    font-size: 120%;
+    text-decoration: none;
+}
+header a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.sidebar {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.sidebar h3 {
+    text-align: center;
+    border-bottom: 4px solid rgb(17, 79, 23);
+    margin-top: 0.5rem;
+    padding: 2.5rem;
+}
+
+.container h1{
+    text-align: center;
+    border-bottom: 4px solid rgb(17, 79, 23);
+    padding-bottom: 0.5rem;
+    margin-top: 0.5;
+}
+.container h4{
+    text-align: center;
+    padding-bottom: 0.5rem;
+    margin-top: 0.5;
+}
+header .logo {
+    max-height: 3rem;
+}
+.container h2{
+    text-align: center;
+    padding-bottom: 0.5rem;
+    margin-top: 0.5;
+}
+
+.container h6{
+    text-align: center;
+    margin-left: 7rem;
+    padding-bottom: 0.5rem;
+    margin-top: 0.5;
+}
+.container p{
+    text-align: center;
+    padding-bottom: 0.5rem;
+    margin-top: 0.5;
+}
+footer img {
+    max-height: 3rem;
+    margin-top: 0.5rem;
+    margin-left: 7rem;
+}
+
+main img {
+    max-height: 8rem;
+    align-items: center;
+    place-items: stretch center;
+    grid-template-columns: 8rem repeat(1, auto);
+    margin-left: 25rem;
+}
+
+main .logo{
+    max-height: 3rem; 
+    align-items: center;
+    margin-left: 5rem;
+    margin-bottom: 0.5rem;
+}
+.suo {
+    max-height: 6rem; 
+    align-items: center;
+    margin-left: 5.5rem;
+}
+

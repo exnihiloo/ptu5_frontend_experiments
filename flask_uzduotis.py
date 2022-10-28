@@ -14,11 +14,12 @@ def url(zodis):
 
 @app.route("/keliamieji")
 def keliamieji_metai():
-    keliamieji = []
-    for metai in range(1900, 2101):
-        if metai % 4 == 0 and (metai % 100 != 0 or metai % 400 == 0):
-            keliamieji.append(metai)
-    return f"Kelimieji metai nuo 1900 iki 2100: {keliamieji}"
+    keliamieji_m = []
+    metai = range(1900, 2101)
+    for i in metai:
+        if i % 4 == 0 and (i % 100 != 0 or i % 400 == 0):
+            keliamieji_m.append(i)
+    return render_template("keliamieji.html", **request.args, keliamieji = keliamieji_m) 
 
 @app.route("/metai")
 def metai():

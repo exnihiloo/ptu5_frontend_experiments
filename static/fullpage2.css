@@ -1,0 +1,117 @@
+body {
+    display: grid;
+    grid-template-rows: 3rem auto 10rem;
+    /* grid-template-columns: auto 20%; */
+    /* pirmas 3rem yra header, auto yra main, 10rem yra footer */
+    margin: 0;
+    min-height: 100vh;
+    /* vh aukstis, vw plotis */
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header {
+    background-color: rgb(199, 137, 191);
+    color: rgb(10, 1, 1);
+    display: grid;
+    place-items: stretch center;
+    /* position: fixed; */
+    /* grid-column: span    2; */
+}
+footer {
+    background-color: rgb(123, 123, 248);
+    display: grid;
+    place-items: stretch center;
+    /* grid-column: span 2; */
+}
+main {
+    background: url('/static/clouds.jpeg');
+    background-size: cover;
+    background-position: center center;
+    display: grid;
+    place-items: stretch center;
+    background-attachment: fixed;
+}
+
+.container {
+    width: 1200px;
+    max-width: 90vw;
+}
+/* padeti tarpa, kad container butu elemente main */
+main .container {
+    background-color: rgba(255, 255, 255, 0.5);
+    display: grid;
+    grid-template-columns: auto 20%;
+    place-items: stretch stretch;
+    background-attachment: fixed;
+}
+header .container {
+    display: grid;
+    place-items: center start;
+    grid-template-columns: 8rem repeat(6, auto);
+
+}
+header .logo {
+    max-height: 3rem;
+}
+
+main .logo{
+    max-height: 3rem; 
+    align-items: center;
+    margin-left: 5rem;
+}
+
+header a{
+    color:rgb(80, 12, 157);
+    padding: 0.7rem;
+    font-size: 120%;
+    text-decoration: none;
+}
+
+main a{
+    color:rgb(80, 12, 157);
+    padding: 0.7rem;
+    font-size: 120%;
+    text-decoration: none;
+    margin-left: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+main a:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 0.3rem
+}
+.lasagne {
+    margin-left: 0.5rem;
+}
+header a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.sidebar {
+    background-color: rgba(255, 168, 255, 0.2);
+}
+.sidebar h3 {
+    text-align: center;
+}
+
+.container h1{
+    text-align: center;
+    border-bottom: 4px solid rgb(189, 102, 169);
+    padding-bottom: 0.5rem;
+    margin-top: 0.5;
+}
+
+.container h2{
+    text-align: center;
+    border-bottom: 4px solid rgb(189, 102, 169);
+    padding-bottom: 0.5rem;
+    margin-top: 0.5;
+}
+
+.content p{
+    padding: 0 1rem;
+}
+
+footer img {
+    max-height: 10rem;
+}
+

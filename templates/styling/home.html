@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Styling</title>
+    <style>
+body { 
+    background-color: rgb(201, 160, 239);
+    font-family: monospace;
+    background-image: url("{{ url_for('static', filename='clouds.jpeg') }}");
+    /* padaro normalu, nepadalinta background */
+    background-size: cover;
+    background-position: 0 30%;
+
+}
+h1, h2 {
+    /* text centruotas */
+    text-align: center; 
+    /* fonas baltas */
+    background-color: azure;
+    /* vidinis atitraukimas per viena reletyvu elementa (rem) */
+    padding: 1rem;
+    /* remelio storis du pikseliai, tipas - pilnas(solid), spalva - zydra */
+    border: 2px solid rgb(21, 234, 227); 
+    /* isorinis remelis, 0.5 nuo virsaus ir apacios, auto is sonu, kad centruoti */
+    margin: 0.5rem auto 0;
+    /* plotis - puse ekrano, vw yra visas ekrano plotis */
+    width: 50vw;  
+}
+h2 {
+    /* tik h2 pasikeite bottom remelio plotis */
+    border-bottom-width: 5px;
+
+    /* seselis */
+    box-shadow: rgb(93, 31, 83) 0.5rem 0.5rem;
+   
+}
+.antras {
+    color: rgb(9, 9, 184);
+}
+
+.septym {
+    width: 70vw;
+}
+
+.text-center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.right-box {
+    display: inline;
+    float: right;
+    width: 33%;
+    padding: -10rem;
+    border: 2px solid rgb(18, 241, 245);
+    background-color: black;
+    color: magenta;
+    margin-top: -2rem;
+}
+h1.highlight{
+    background-color: blueviolet;
+}
+.highlight {
+    background-color: #fc0;
+}
+img {
+    max-width: 40vw;
+    float: left;    
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+    border: 5px solid rgb(18, 241, 254);
+}
+    </style>
+</head>
+<body>
+    <h1 class = 'highlight'>Hello world</h1>
+    <h2 class="antras septym" style="margin-bottom: 2rem;">As collected deficient objection by it discovery sincerity curiosity</h2>
+    <img src="https://thewinewankers.files.wordpress.com/2014/01/a-funny-cat-glass-wine-bottle.jpg">
+    <p style="color: rgb(246, 246, 246);">She exposed painted fifteen are noisier mistake led waiting. 
+        Surprise not wandered speedily husbands although yet end. 
+        Are court tiled cease young built fat one man taken. 
+        We highest ye friends is exposed equally in. 
+        Ignorant had too strictly followed. Astonished as travelling
+        assistance or unreserved oh pianoforte ye. Five with seen put
+        need tore add neat. Bringing it is he returned received raptures.</p>
+        <p class="antras septym text-center">Now seven world think timed while her. Spoil large oh he rooms on since an. Am up unwilling eagerness perceived incommode. Are not windows set luckily musical hundred can. Collecting if sympathize middletons be of of reasonably. Horrible so kindness at thoughts exercise no weddings subjects. The mrs gay removed towards journey chapter females offered not. Led distrusts otherwise who may newspaper but. Last he dull am none he mile hold as.</p>
+        <p class = 'highlight'>Much evil soon high in hope do view. Out may few northward believing attempted. Yet timed being songs marry one defer men our. Although finished blessing do of. Consider speaking me prospect whatever if. Ten nearer rather hunted six parish indeed number. Allowance repulsive sex may contained can set suspected abilities cordially. Do part am he high rest that. So fruit to ready it being views match.</p>
+        <p class="septym">Was drawing natural fat respect husband. An as noisy an offer drawn blush place. These tried for way joy wrote witty. In mr began music weeks after at begin. Education no dejection so direction pretended household do to. Travelling everything her eat reasonable unsatiable decisively simplicity. Morning request be lasting it fortune demands highest of.</p>
+        <p class="right-box">Village did removed enjoyed explain nor ham saw calling talking. Securing as informed declared or margaret. Joy horrible moreover man feelings own shy. Request norland neither mistake for yet. Between the for morning assured country believe. On even feet time have an no at. Relation so in confined smallest children unpacked delicate. Why sir end believe uncivil respect. Always get adieus nature day course for common. My little garret repair to desire he esteem.</p>
+        <p>Over fact all son tell this any his. No insisted confined of weddings to returned to debating rendered. Keeps order fully so do party means young. Table nay him jokes quick. In felicity up to graceful mistaken horrible consider. Abode never think to at. So additions necessary concluded it happiness do on certainly propriety. On in green taken do offer witty of.</p>
+        <p class="highlight">Both rest of know draw fond post as. It agreement defective to excellent. Feebly do engage of narrow. Extensive repulsive belonging depending if promotion be zealously as. Preference inquietude ask now are dispatched led appearance. Small meant in so doubt hopes. Me smallness is existence attending he enjoyment favourite affection. Delivered is to ye belonging enjoyment preferred. Astonished and acceptance men two discretion. Law education recommend did objection how old.</p>
+        <p>Surprise steepest recurred landlord mr wandered amounted of. Continuing devonshire but considered its. Rose past oh shew roof is song neat. Do depend better praise do friend garden an wonder to. Intention age nay otherwise but breakfast. Around garden beyond to extent by.</p>
+        <p>Whole every miles as tiled at seven or. Wished he entire esteem mr oh by. Possible bed you pleasure civility boy elegance ham. He prevent request by if in pleased. Picture too and concern has was comfort. Ten difficult resembled eagerness nor. Same park bore on be. Warmth his law design say are person. Pronounce suspected in belonging conveying ye repulsive.</p>
+
+</body>
+</html>
