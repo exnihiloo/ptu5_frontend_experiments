@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    padding: 0.5rem;
+    background-color: blueviolet;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* max-height: 10rem; */
+    /* row-gap: 1rem;
+    column-gap: 2rem; */
+    max-width: 30vw;
+    margin: 5rem auto;
+}
+
+.item {
+    background-color: orange;
+    text-align: center;
+    /* flex-grow: 1; */
+    padding: 0.5rem;
+    /* flex-basis: 10%; */
+}

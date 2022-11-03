@@ -1,0 +1,88 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+
+header {
+    background-color: rgb(148, 57, 57);
+    height: 4rem;
+    width: 100vw;
+    position: fixed;
+    /* jei nusirodom fixed position, reikia nurodyti daikto dydi */
+}
+
+main {
+    background-image: url("/static/ruduo.jpeg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    flex-grow: 1;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+}
+
+section.main {
+    flex-grow: 1;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.4);
+    width: 1200px;
+    max-width: 70vw;
+    /* margin: 0 auto; */
+}
+
+.transparent {
+    background: transparent!important;
+}
+
+.things {
+    background-color: rgba(255, 168, 168, 0.5);
+}
+h1, h2, h3, p {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+}
+
+.thing-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 1rem;
+    padding-bottom: 1rem3;
+}
+.thing img{
+    max-width: 100%;
+}
+
+.thing h3 {
+    text-align: center;
+}
+
+footer {
+    min-height: 10rem;
+    background-color: rgb(165, 42, 42);
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: flex-end;
+}
+
+footer .container {
+    background-color: transparent;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
